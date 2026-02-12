@@ -19,8 +19,8 @@
         .text-container {
             width: 100vw;
             height: 100vh;
-            /* Replace 'mymiya (2).jpg' with your image file name */
-            background-image: url('mymiya (2).jpg');                
+            /* Replace 'mymiya.jpg' with your actual image file name */
+            background-image: url('mymiya.jpg');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -32,9 +32,11 @@
             font-family: 'Arial Black', sans-serif;
             font-weight: 900;
             
-            /* font-size scales with screen width for mobile */
-            font-size: 0.8vw;
-            line-height: 0.8vw;
+            /* --- UPDATED SECTION --- */
+            /* Reduced font-size and line-height for more detail */
+            font-size: 0.3vw; 
+            line-height: 0.3vw;
+            /* ----------------------- */
             
             letter-spacing: 0px; 
             text-align: justify;
@@ -51,8 +53,8 @@
 <script>
     const container = document.getElementById('portrait');
     const words = "MY KINOSHI ";
-    // Increased repetition to ensure coverage on high-res mobile screens
-    container.innerText = words.repeat(50000);
+    // Increased repetition to ensure coverage with smaller text
+    container.innerText = words.repeat(100000);
 </script>
 
 </body>
